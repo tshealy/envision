@@ -1,0 +1,194 @@
+@import "compass/reset";
+
+$header: #587833;
+$arrow: #3C72A5;
+$points: #F8FF00;
+
+body {
+	font-family: Helvetica, sans-serif;
+	background: #acacac;
+	font-size: 22px;
+	line-height: 28px;
+    position: relative;
+}
+
+* {
+	vertical-align: top;
+}
+
+a {
+	text-decoration: none;
+}
+
+header {
+	color: #FFF;
+	height: 100px;
+	width: 960px;
+	background: $header;
+	margin: 0 auto;
+	position: relative;
+
+	a {
+		color: #FFF;
+	}
+
+	h1 {
+		font-size: 60px;
+		line-height: 110px;
+		padding-left: 20px;
+		display: inline-block;
+		cursor: pointer;
+	}
+
+	.admin {
+		text-align: right;
+		display: inline-block;
+		position: absolute;
+		right: 20px;
+		top: 55px;
+		cursor: pointer;
+	}
+}
+
+.next-page, .previous-page {
+	position: absolute;
+	display: inline-block;
+	width: 145px;
+	height: 120px;
+	top: 0;
+
+	.rectangle {
+		color: #FFF;
+		width: 105px;
+		position: absolute;
+		top: 26px;
+		display: inline-block;
+		background: $arrow;
+		vertical-align: top;
+		cursor: pointer;
+	}
+
+	.arrow-right, .arrow-left {
+		position: absolute;
+		top: 0;
+		width: 0; 
+		height: 0; 
+		border-top: 60px solid transparent;
+		border-bottom: 60px solid transparent;
+
+		display: inline-block;
+		vertical-align: top;
+		cursor: pointer;
+	}
+
+	.arrow-right {
+		right: 0;
+		border-left: 60px solid $arrow;
+	}
+
+	.arrow-left {
+		left: 0px;	
+		border-right: 60px solid $arrow;
+	}
+}
+
+.next-page {
+	right: 0;
+	
+	.rectangle {
+		line-height: 65px;
+		height: 65px;
+		left: 0;
+		padding-left: 15px;
+		border-radius: 0 15px 15px 0;
+	}
+
+	.submit {
+		text-align: center;
+		border-radius: 15px;
+		padding: 0 20px;
+	}
+}
+
+.previous-page {
+	left: 0;
+
+	.rectangle {
+		line-height: 25px;
+		padding-top: 7px;
+		height: 58px;
+		text-align: center;
+		padding-left: 5px;
+		right: 0;
+		border-radius: 15px 0 0 15px;
+	}
+}
+
+
+.bottom-nav {
+	position: relative;
+	width: 95%;
+	height: 100px;
+	margin: 40px auto 0;
+	padding-top: 15px;
+
+	.review {
+		border: 1px solid rgb(0, 0, 0);
+		width: 414px;
+		padding: 15px;
+		margin: 0 auto 0;
+	}
+}
+
+.quality {
+	background: #D87400;
+}
+
+.natural {
+	background: #909D51;
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(234, 234, 234, 0.5);
+}
+
+.modal {
+    text-align: center;
+    width: 360px;
+    padding: 20px;
+    margin: 200px auto;
+    background: #FFF;
+    border: 3px solid;
+    border-radius: 3px;
+    // position: fixed;
+    // top: 50%;
+    // left: 50%;
+    // margin-top: -200px;
+    // margin-left: -180px;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .modal-text {
+        margin-bottom: 30px;
+    }
+
+    .modal-button {
+        padding: 10px 20px;
+        background: #FFA500;
+        display: inline-block;
+        border-radius: 4px;
+        color: #FFF;
+        cursor: default;
+    }
+}
+
+#qNumber {
+    color: #FFF;
+}

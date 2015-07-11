@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title></title>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+	<link href="../stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+	<link href="../stylesheets/responses.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+	<header>
+		<h1>Response</h1>
+	</header>
+
+	<div class="wrapper">
+		<table>
+			<tbody id="responses">
+
+				<tr>
+					<td colspan="2" class="question-number"></td>
+				</tr>
+				<tr>
+					<td class="header thin right-border">Name</td>
+					<td class="header wide">Response</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+	</div>
+
+
+	<script type="text/template" id="one-response">
+
+		<tr>
+			<td class="thin right-border name"><%= response.fullName %></td>
+			<td class="wide"><%= response.explanation %></td>
+		</tr>
+
+	</script>
+
+
+	<script type="text/javascript" src="../scripts/parse.js"></script>
+	<script type="text/javascript" src="../scripts/responses.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+
+
+</body>
+</html>

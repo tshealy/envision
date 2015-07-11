@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Envision: Natural World</title>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+	<link href="../stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+	<link href="../stylesheets/natural.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+	<header>
+		<a href="../index.html"><h1>Envision Rating System</h1></a>
+	</header>
+
+	<div class="wrapper">
+
+		<div class="score">
+
+			<span class="margin-right">Your Score: <span id="actual-score"></span></span>
+			<span>Max Score: <span id="max-score"></span></span>
+
+		</div>
+
+		<table>
+			<tbody>
+				<tr class="category-titles">
+					<td class="thinnest table-cell">Credit</td>
+					<td class="wide table-cell">Credit Intent<br>and Metric</td>
+					<td class="medium table-cell">Is this Required<br>for the Project?</td>
+					<td class="wide table-cell">Level of<br>Achievement</td>
+					<td class="thinnest table-cell">Score</td>
+					<td class="thin table-cell">Possible<br>Points</td>
+				</tr>
+
+				<tr>
+					<td colspan="6" class="main-heading">Natural World</td>
+				</tr>
+
+				<!-- categories go here -->
+
+			</tbody>
+		</table>
+
+		<div class="bottom-nav">
+			<div class="arrow previous-page">
+
+				<a href="../quality_of_life/index.html" class="arrow-left"></a>
+				<a href="../quality_of_life/index.html" class="rectangle">Previous Page</a>
+			</div>
+
+			<div class="arrow next-page">
+
+				<div class="rectangle submit">Submit</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/template" id="question">
+
+		<tr class="category" id="<%= question.number %>">
+
+			<td rowspan="2" class="thinnest category-number bold"><%= question.number %></td>
+			<td class="wide description" rowspan="2">
+				<span class="bold"><%= question.synopsis %></span>
+				<br>
+				<p><%= question.body %></p>
+
+				<a href="../details_and_guidance/index.html?question=<%= question.number %>" target="_blank">details / guidance</a>
+			</td>
+
+			<td class="medium applicability">
+				<span>Applicability</span>
+				<select class="ap">
+					<option value="applicable">Applicable</option>
+					<option value="not applicable">Not Applicable</option>
+				</select>
+			</td>
+			<td class="wide value-added">
+				<select class="va">
+					<%= question.selectOptions %>
+				</select>
+			</td>
+			<td class="thinnest category-score"><%= question.score %></td>
+			<td class="thin possible-points"><%= question.maxPoints %></td>
+
+		</tr>
+		<tr class="text-area">
+			<td class="bottom-section" colspan="6">
+				<span class="words">*</span>
+				<span class="words word-number"><%= question.wordCount %></span>
+				<span class="words word-minimum "> word minimum required for this level.</span>
+				<span class="words current-word-count"></span>
+				<textarea></textarea>
+			</td>
+		</tr>
+
+		<tr class="question-separator">
+			<td colspan="6"></td>
+		</tr>
+
+	</script>
+
+	<script type="text/javascript" src="../scripts/parse.js"></script>
+    <script type="text/javascript" src="../scripts/data.js"></script>
+    <script type="text/javascript" src="../scripts/details_data.js"></script>
+    <script type="text/javascript" src="../scripts/process_data.js"></script>
+	<script type="text/javascript" src="../scripts/natural.js"></script>
+    <script type="text/javascript" src="../scripts/form.js"></script>
+	<script type="text/javascript" src="../scripts/test.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+
+
+</body>
+</html>

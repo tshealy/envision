@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Envision: Admin</title>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+	<link href="../stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+	<link href="../stylesheets/admin.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<table>
+
+			<tbody id="heading">
+				<tr class="options">
+					<td colspan="2"></td>
+					<td colspan="2" class="logout">Logout</td>
+					<td colspan="2" class="standard">Standard</td>
+					<td colspan="2" class="primed">primed</td>
+				</tr>
+
+				<tr>
+					<td colspan="1"</td>
+					<td colspan="1000" class="credit-rating selected">
+						Credit Rating for <span id="group"></span> Default
+					</td>
+				</tr>
+			</tbody>
+
+			<tbody id="table">
+				<tr id="question-number">
+					<td></td>
+					<td rowspan="1" class="student-name column-header">Student Name</td>
+				</tr>
+
+				<!-- append students here -->
+
+			</tbody>
+
+		</table>
+
+	</div>
+
+	<script type="text/javascript" src="../scripts/parse.js"></script>
+	<script type="text/javascript" src="../scripts/data.js"></script>
+	<script type="text/javascript" src="../scripts/admin.js"></script>
+	<script type="text/javascript" src="../scripts/main.js"></script>
+
+
+</body>
+</html>

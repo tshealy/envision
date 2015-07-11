@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Envision</title>
+</head>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+
+	<link href="stylesheets/directions_normal.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+	<link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css"/>
+
+<body>
+
+	<header>
+		<a href="#"><h1>Envision Rating System</h1></a>
+		<div class="admin admin-login">Admin</div>
+	</header>
+
+	<div class="wrapper">
+
+		<span class="directions">Directions:</span>
+
+		<p class="directions-copy"></p>
+
+		<div class="name-form">
+
+			<span class="please-enter">Please enter:</span>
+			<div class="name">
+				<input class="first-name">
+				<span  class="name-type">First Name</span>
+			</div>
+			<div class="name">
+				<input class="last-name">
+				<span  class="name-type">Last Name</span>
+			</div>
+
+			<p class="note">
+				*Note: Closing the window before submitting will cause you to start over.
+				<br>
+				Please try to finish the rating in one attempt.
+			</p>
+
+		</div>
+
+		<div class="bottom-nav">
+			<div class="arrow next-page" id="submit-name">
+
+				<div class="arrow-right"></div>
+				<div class="rectangle">Next Page</div>
+			</div>
+		</div>
+
+
+	</div>
+
+    <script type="text/template" id="modal-template">
+        <div class="modal-container">
+            <div class="modal">
+                <h1>Please submit a first and last name.</h1>
+                <div class="modal-button proceed">ok</div>
+            </div>
+        </div>
+    </script>
+
+	<script type="text/javascript" src="scripts/parse.js"></script>
+    <script type="text/javascript" src="scripts/data.js"></script>
+    <script type="text/javascript" src="scripts/details_data.js"></script>
+	<script type="text/javascript" src="scripts/process_data.js"></script>
+	<script type="text/javascript" src="scripts/name.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+
+</body>
+</html>
